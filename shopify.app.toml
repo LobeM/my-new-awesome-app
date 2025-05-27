@@ -1,0 +1,36 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "b3a9eddedd76dd07f2b8af56836c3ac4"
+name = "my-new-awesome-app"
+handle = "my-new-awesome-app-297"
+application_url = "https://cubic-camcorder-daughters-washington.trycloudflare.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-04"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/scopes_update" ]
+  uri = "/webhooks/app/scopes_update"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://cubic-camcorder-daughters-washington.trycloudflare.com/auth/callback",
+  "https://cubic-camcorder-daughters-washington.trycloudflare.com/auth/shopify/callback",
+  "https://cubic-camcorder-daughters-washington.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
