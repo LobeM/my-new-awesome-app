@@ -3,7 +3,7 @@
 client_id = "b3a9eddedd76dd07f2b8af56836c3ac4"
 name = "my-new-awesome-app"
 handle = "my-new-awesome-app-297"
-application_url = "https://cubic-camcorder-daughters-washington.trycloudflare.com"
+application_url = "https://fee-me-sas-accent.trycloudflare.com"
 embedded = true
 
 [build]
@@ -27,9 +27,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://cubic-camcorder-daughters-washington.trycloudflare.com/auth/callback",
-  "https://cubic-camcorder-daughters-washington.trycloudflare.com/auth/shopify/callback",
-  "https://cubic-camcorder-daughters-washington.trycloudflare.com/api/auth/callback"
+  "https://fee-me-sas-accent.trycloudflare.com/auth/callback",
+  "https://fee-me-sas-accent.trycloudflare.com/auth/shopify/callback",
+  "https://fee-me-sas-accent.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
